@@ -1,0 +1,240 @@
+/* || GENERAL STYLES */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    background-color: aliceblue;
+    font-family: sans-serif;
+    line-height: 1.5;
+}
+
+h3 {
+    font-family: Verdana , Helvetica , sans-serif;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.6rem;
+    font-family: Helvetica , Verdana , sans-serif;
+}
+
+/* || UTILITIES */
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+
+/* || HEADER */
+
+header {
+    padding: 20px;
+    background-color: #333333;
+    overflow: hidden;
+}
+
+header h1 {
+    display: inline-block;
+    background-color: #7fe5f0;
+    font-family: Verdana , Helvetica , sans-serif;
+    font-size: 4.0rem;
+    text-align: right;
+}
+
+nav {
+    float: right;
+    padding-top: 15px;
+    margin-right: 20px;
+    font-family: Helvetica , Verdana , sans-serif;
+    font-size: 2.0rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+
+nav a {
+    text-decoration: underline;
+    color: #7fe5f0;
+}
+
+/* || SUBTITLE PICTURE */
+/* Photo public domain by Scott Webb from Pexels */
+
+.subtitle {
+    height: 110px;
+    width: 100%;
+    margin-bottom: 25px;
+    background: url("../images/scott_webb.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.subtitle h3 {
+    float: right;
+    margin-right: 25px;
+    margin-top: 50px;
+    padding: 1.0rem;
+    background-color: #7fe5f0;
+}
+
+/* || MAIN */
+
+main {
+    width: 90%;
+    margin: 2rem auto;
+}
+
+/* || ABOUT */
+
+.about {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    margin-bottom: 3.0rem;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.about h2 {
+    font-size: 4.0rem;
+    text-align: right;
+    line-height: 1.2;
+}
+
+.vl {
+    border-left: 3px solid black;
+    height: auto;
+    position: relative;
+    margin: 1.0rem;
+    top: auto;
+}
+
+.about img {
+    float: right;
+    max-width: 25%;
+    height: auto;
+    border: 2px inset aliceblue;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.about p {
+    width: 100%;
+    padding-left: 2.0rem;
+}
+
+/* || WORK */
+
+.work {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    margin-bottom: 3.0rem;
+}
+
+.work h2 {
+    font-size: 4.0rem;
+    text-align: right;
+    line-height: 1.2;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card {
+    flex: 1 0 100%;
+    padding: 1.5rem;
+}
+
+.card-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100%;
+    padding: 2rem;
+
+    outline: 2px solid #7fe5f0;
+    outline-offset: -2px;
+
+    background-image: none;
+}
+
+.title {
+    background-color: #7fe5f0;
+}
+
+/* || CONTACT */
+
+.contact {
+    display: flex;
+    flex-wrap: none;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    margin-bottom: 3.0rem;
+}
+
+.contact h2 {
+    font-size: 4.0rem;
+    text-align: right;
+    line-height: 1.2;
+}
+
+.contact ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.contact li {
+    display: inline-block;
+}
+
+
+.contact a {
+    text-decoration: underline;
+    color: black;
+    font-size: 1.6rem;
+    font-family: Helvetica , Verdana , sans-serif;
+}
+
+/* || FOOTER */
+
+footer {
+    padding: 15px;
+    background-color: #333333;
+    color: aliceblue;
+    text-align: center;
+}
