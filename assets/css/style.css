@@ -77,8 +77,12 @@ nav a {
     color: #7fe5f0;
 }
 
+nav a:hover {
+    color: pink;
+}
+
 /* || SUBTITLE PICTURE */
-/* Photo public domain by Scott Webb from Pexels */
+/* Photo is public domain by Scott Webb from Pexels */
 
 .subtitle {
     height: 110px;
@@ -94,6 +98,7 @@ nav a {
     margin-right: 25px;
     margin-top: 50px;
     padding: 1.0rem;
+    border-radius: 20px;
     background-color: #7fe5f0;
 }
 
@@ -167,6 +172,7 @@ main {
 .wrap {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     width: 100%;
 }
 
@@ -185,11 +191,55 @@ main {
     outline: 2px solid #7fe5f0;
     outline-offset: -2px;
 
-    background-image: none;
+    filter:opacity(75%)
+}
+
+.card-box {
+    flex-grow: 1;
 }
 
 .title {
+    position: relative;
+    margin: 0 0 1.5rem 0;
+    padding: 0.5rem 1rem;
+    width: 17rem;
     background-color: #7fe5f0;
+    text-align: left;
+}
+
+.card-box:hover {
+    box-shadow: inset 0px 0px 5px gray, 0 0 10px gray;
+    filter:opacity(100%);
+}
+
+/* Photo is public domain by Francesco Ungaro from Pexels */
+.f-one {
+    background: url("../images/francesco-ungaro.jpeg");
+    background-size: cover;
+}
+
+/* Photo is public domain by Jakub Novacek from Pexels */
+.f-two {
+    background: url("../images/jakub-novacek.jpeg");
+    background-size: cover;
+}
+
+/* Photo is public domain by Pixabay from Pexels */
+.f-three {
+    background: url("../images/pixabay.jpeg");
+    background-size: cover;
+}
+
+/* Photo is public domain by Burak K from Pexels */
+.f-four {
+    background: url("../images/burak.jpeg");
+    background-size: cover;
+}
+
+/* Photo is public domain by eberhard grossgasteiger from Pexels */
+.f-five {
+    background: url("../images/eberhard-grossgasteiger.jpeg");
+    background-size: cover;
 }
 
 /* || CONTACT */
@@ -237,4 +287,19 @@ footer {
     background-color: #333333;
     color: aliceblue;
     text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .card {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+
+      .card:first-child {
+        min-width: 100%;
+      }
+}
+
+@media screen and (min-width: 992px) {
+
 }
