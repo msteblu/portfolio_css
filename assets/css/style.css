@@ -7,6 +7,7 @@
 }
 
 html {
+    /* To set the base REM */
     font-size: 10px;
 }
 
@@ -16,25 +17,30 @@ body {
     line-height: 1.5;
 }
 
+h1 {
+    color: #333333;
+}
+
+h2 {
+    color: #576675;
+}
+
 h3 {
     font-family: Verdana , Helvetica , sans-serif;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
+    color: #333333;
 }
 
 p {
     font-size: 1.6rem;
-    font-family: Helvetica , Verdana , sans-serif;
+    font-family: Verdana , Helvetica , sans-serif;
+    color: #576675;
 }
 
 /* || UTILITIES */
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
 
-.float-right {
-    float: right;
-    margin-left: 25px;
+.justify-center {
+    justify-content: center;
 }
 
 /* || HEADER */
@@ -51,13 +57,16 @@ header h1 {
     font-family: Verdana , Helvetica , sans-serif;
     font-size: 4.0rem;
     text-align: right;
+    margin: 0 0 0 -2.0rem;
+    padding-left: 5.0rem;
+    padding-right: 1.0rem;
 }
 
 nav {
     float: right;
     padding-top: 15px;
     margin-right: 20px;
-    font-family: Helvetica , Verdana , sans-serif;
+    font-family: Verdana , Helvetica , sans-serif;
     font-size: 2.0rem;
     text-align: center;
 }
@@ -73,12 +82,15 @@ nav li {
 
 
 nav a {
-    text-decoration: underline;
+    text-decoration: none;
     color: #7fe5f0;
+    border-bottom: 3px solid #7fe5f0;
+    line-height: 1;
 }
 
 nav a:hover {
     color: pink;
+    border-bottom: 3px solid pink;
 }
 
 /* || SUBTITLE PICTURE */
@@ -109,6 +121,29 @@ main {
     margin: 2rem auto;
 }
 
+/* || Left Column Titles */
+
+.info {
+    display:flex;
+    flex-direction: row;
+    width: 20rem;
+}
+
+/* Vertical Lines */
+.vl {
+    border-left: 3px solid #576675;
+    height: auto;
+    position: relative;
+    margin: 1.0rem;
+    top: auto;
+}
+
+.info h2 {
+    font-size: 4.0rem;
+    text-align: right;
+    line-height: 1.2;
+}
+
 /* || ABOUT */
 
 .about {
@@ -120,35 +155,24 @@ main {
     margin-bottom: 3.0rem;
 }
 
-.justify-center {
-    justify-content: center;
+.me {
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;
 }
 
-.about h2 {
-    font-size: 4.0rem;
-    text-align: right;
-    line-height: 1.2;
-}
-
-.vl {
-    border-left: 3px solid black;
-    height: auto;
-    position: relative;
-    margin: 1.0rem;
-    top: auto;
-}
-
-.about img {
+.me img {
     float: right;
     max-width: 25%;
     height: auto;
     border: 2px inset aliceblue;
     border-radius: 50px;
-    margin: 10px;
+    margin: 1.0rem;
+    margin-right: auto;
 }
 
-.about p {
-    width: 100%;
+.me p {
     padding-left: 2.0rem;
 }
 
@@ -163,12 +187,6 @@ main {
     margin-bottom: 3.0rem;
 }
 
-.work h2 {
-    font-size: 4.0rem;
-    text-align: right;
-    line-height: 1.2;
-}
-
 .wrap {
     display: flex;
     flex-wrap: wrap;
@@ -179,6 +197,11 @@ main {
 .card {
     flex: 1 0 100%;
     padding: 1.5rem;
+}
+
+.card a {
+    text-decoration: none;
+    color: black;
 }
 
 .card-box {
@@ -200,9 +223,9 @@ main {
 
 .title {
     position: relative;
-    margin: 0 0 1.5rem 0;
+    margin: 2.0rem 0 1.5rem -2.0rem;
     padding: 0.5rem 1rem;
-    width: 17rem;
+    width: 20rem;
     background-color: #7fe5f0;
     text-align: left;
 }
@@ -253,12 +276,6 @@ main {
     margin-bottom: 3.0rem;
 }
 
-.contact h2 {
-    font-size: 4.0rem;
-    text-align: right;
-    line-height: 1.2;
-}
-
 .contact ul {
     list-style-type: none;
     display: flex;
@@ -274,10 +291,12 @@ main {
 
 
 .contact a {
-    text-decoration: underline;
+    text-decoration: none;
     color: black;
     font-size: 1.6rem;
-    font-family: Helvetica , Verdana , sans-serif;
+    font-family: Verdana , Helvetica , sans-serif;
+    border-bottom: 3px solid #576675;
+    line-height: 1;
 }
 
 /* || FOOTER */
@@ -285,8 +304,11 @@ main {
 footer {
     padding: 15px;
     background-color: #333333;
-    color: aliceblue;
     text-align: center;
+}
+
+footer p {
+    color: aliceblue;
 }
 
 @media screen and (min-width: 768px) {
@@ -301,5 +323,7 @@ footer {
 }
 
 @media screen and (min-width: 992px) {
-
+    .me img {
+        max-width: 20%;
+    }
 }
