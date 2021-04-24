@@ -1,3 +1,11 @@
+/* Variables */
+:root {
+    --background: aliceblue;
+    --header: #333333;
+    --blue: #7fe5f0;
+    --gray: #576675;
+}
+
 /* || GENERAL STYLES */
 
 * {
@@ -12,29 +20,29 @@ html {
 }
 
 body {
-    background-color: aliceblue;
+    background-color: var(--background);
     font-family: sans-serif;
     line-height: 1.5;
 }
 
 h1 {
-    color: #333333;
+    color: var(--header);
 }
 
 h2 {
-    color: #576675;
+    color: var(--gray);
 }
 
 h3 {
     font-family: Verdana , Helvetica , sans-serif;
     font-size: 2.0rem;
-    color: #333333;
+    color: var(--header);
 }
 
 p {
     font-size: 1.6rem;
     font-family: Verdana , Helvetica , sans-serif;
-    color: #576675;
+    color: var(--gray);
 }
 
 /* || UTILITIES */
@@ -47,13 +55,13 @@ p {
 
 header {
     padding: 20px;
-    background-color: #333333;
+    background-color: var(--header);
     overflow: hidden;
 }
 
 header h1 {
     display: inline-block;
-    background-color: #7fe5f0;
+    background-color: var(--blue);
     font-family: Verdana , Helvetica , sans-serif;
     font-size: 4.0rem;
     text-align: right;
@@ -84,7 +92,7 @@ nav li {
 nav a {
     text-decoration: none;
     color: #7fe5f0;
-    border-bottom: 3px solid #7fe5f0;
+    border-bottom: 3px solid var(--blue);
     line-height: 1;
 }
 
@@ -111,7 +119,7 @@ nav a:hover {
     margin-top: 50px;
     padding: 1.0rem;
     border-radius: 20px;
-    background-color: #7fe5f0;
+    background-color: var(--blue);
 }
 
 /* || MAIN */
@@ -131,7 +139,7 @@ main {
 
 /* Vertical Lines */
 .vl {
-    border-left: 3px solid #576675;
+    border-left: 3px solid var(--gray);
     height: auto;
     position: relative;
     margin: 1.0rem;
@@ -166,7 +174,7 @@ main {
     float: right;
     max-width: 25%;
     height: auto;
-    border: 2px inset aliceblue;
+    border: 2px inset var(--background);
     border-radius: 50px;
     margin: 1.0rem;
     margin-right: auto;
@@ -211,7 +219,7 @@ main {
     min-height: 100%;
     padding: 2rem;
 
-    outline: 2px solid #7fe5f0;
+    outline: 2px solid var(--blue);
     outline-offset: -2px;
 
     filter:opacity(75%)
@@ -226,7 +234,7 @@ main {
     margin: 2.0rem 0 1.5rem -2.0rem;
     padding: 0.5rem 1rem;
     width: 20rem;
-    background-color: #7fe5f0;
+    background-color: var(--blue);
     text-align: left;
 }
 
@@ -295,7 +303,7 @@ main {
     color: black;
     font-size: 1.6rem;
     font-family: Verdana , Helvetica , sans-serif;
-    border-bottom: 3px solid #576675;
+    border-bottom: 3px solid var(--gray);
     line-height: 1;
 }
 
@@ -303,12 +311,12 @@ main {
 
 footer {
     padding: 15px;
-    background-color: #333333;
+    background-color: var(--header);
     text-align: center;
 }
 
 footer p {
-    color: aliceblue;
+    color: var(--background);
 }
 
 @media screen and (min-width: 768px) {
